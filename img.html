@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+  .nav-header{
+    margin-right:70%;
+    margin-left:30%;
+  
+  }
+  .container-fluid{
+    margin-left:20%;
+    
+  }
+  #carousel{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .background{
+        button-align:center;
+        margin-left:40%;
+        margin-right:50%;
+    }
+        body{
+        background-image: url(https://img.freepik.com/premium-photo/interracial-family-holding-baby-feet-hands-mixed-by-black-white-skin-color_592956-341.jpg?w=2000);
+        background-position: center;
+        color:white;
+        background-size:cover;
+    }
+    
+  </style>
+<body>
+  <div class="row">
+    <div class="nav-header">
+      <img src="data:image/jpeg;base64,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" id="logo" alt="" img-align="middle" class="w-1">
+  <br>
+    </div>
+  <nav class="navbar navbar-expand-lg bg-info navbar-dark">
+  <div class="container-fluid">
+    <a href=""class="navbar-brand"></a>
+    <button class="navbar-toggler btn btn-danger" data-bs-target="#navbar123" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+
+     <ul class="collapse navbar-collapse" id="navbar123">
+       <li class="nav-item mx-5"><a href="">Home</a>
+       </li> 
+       <li class="nav-item mx-5"><a href="about us.html">About us</a>
+       </li> 
+       <li class="nav-item mx-5"><a href="services.html">Services</a>
+       </li> 
+       <li class="nav-item mx-5"><a href="our team.html">Our team</a>
+      </li>
+       <li class="nav-item mx-5"><a href="contact us.html">Contact us</a>
+       </li> 
+    </ul>
+  
+    </div>
+    </nav>
+
+
+</div>
+
+</body><br>
+<body id="carousel">
+    <div class="carousel slide" data-bs-ride="carousel" id="carousel123">
+        <ul class="carousel-indicators">
+            <li data-bs-target="#carousel123" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel123" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel123" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carousel123" data-bs-slide-to="3"></li>
+            <li data-bs-target="#carousel123" data-bs-slide-to="4"></li>
+         </ul>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="https://1.bp.blogspot.com/-K6Qa9O78iXY/XSxbg22d5ZI/AAAAAAAAUR0/qvQKGbUup_4K6qZ6SQ8sO7Xl5INZVxOZACLcBGAs/s1600/Baby-Status-in-English.jpg" alt="" class="w-100">
+           <div class="carousel-caption">
+              <h1 class="text-warning">Baby care children hospital</h1>
+              <h2 class="text-success">Its time for better help</h2>
+              <p></p>
+           </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.venkateshwarhospitals.com/blog/wp-content/uploads/2019/02/Choosing-The-Best-Hospital-For-Child-Care-Venkateshwar-Hospital.jpg" alt="" class="w-100">  
+            </div>
+            <div class="carousel-item">
+             <img src="https://rubanwomenchildren.com/wp-content/uploads/2020/01/blog-ratan-banner-winter-care-1.jpg" alt="" class="w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="https://5.imimg.com/data5/IR/RU/BC/SELLER-12055959/baby-care-at-home-500x500.jpg" alt="" class="w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="https://hindustanlive.net/wp-content/uploads/2020/02/unnamed.jpg" alt="" class="w-100">
+                <br>
+                <br>
+               <div class="carousel-caption">
+                <h2 class="text-warning">PROVIDING HEALTH SOLUTION</h2>
+            </div>
+            </div>
+        </div>
+         <a href="#carousel123" class="carousel-control-prev" data-bs-slide="prev"><i class="bi bi-caret-left-square-fill"></i>
+         </i>
+          </a>
+         <a href="#carousel123" class="carousel-control-next" data-bs-slide="next"><i class="bi bi-caret-right-fill"></i></a>
+        </div>
+        </body>
+        <body>
+          <div class="row">
+            <div class="card col-3">
+                <div class="card-header">
+                    <h1></h1>
+                 <img src="https://cdn.cdnparenting.com/articles/2019/06/18144854/Top-10-Home-Remedies-for-Fever-in-Babies-1.webp" alt="" class="w-100">
+        
+                </div>
+                <div class="card-body">
+                 <h3>Home relamedy for fever</h3>
+                 <p class="text-primary">1. Cold Compress
+                    Place a damp washcloth on your baby’s forehead while she’s asleep. This is one of the best home remedies for high fever in babies. Doing this reduces your child’s body temperature and lessens discomfort.
+                    <br>
+                    2. Lukewarm Bath
+                    Give your baby a gentle, lukewarm bath in a tub or sponge her with warm water. This method will reduce the temperature as the water evaporates off her body. Don’t bathe her in room-temperature water. This can cause a rapid and drastic temperature change and aggravate the fever.
+                    
+                    
+               </p>
+        
+               </div>
+               </div>
+        
+            <div class="card col-4">
+                <div class="card-header">
+                 <img src="https://www.parents.com/thmb/qmEAWYLpDbmm3-zJc69CIYN2Xwo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_455879767-7492f1ee138a479d9413335d14878378.jpg" alt="" class="w-75">
+                </div>
+                <div class="card-body">
+                 <h3>Powerful medicine</h3>
+                 <p class="text-primary">Nobody looks forward to their baby's first vaccinations. Even though the shots are crucial to their long-term health, seeing your infant upset or in pain is difficult for any parent. But did you know that parents can play a crucial role in relieving the side effects of vaccines in babies, making the process more comfortable for both of you?
+        
+                    An October 2018 study funded by the Canadian Institutes of Health Research focused on parental awareness and adoption of pain-relief strategies during infant immunizations. Through hospital prenatal programs at Mount Sinai Hospital in Toronto, the researchers worked with parents to create educational tools for reducing vaccination distress for babies. The tools included a pamphlet and a video.</p>
+                </div>
+            </div>
+            <div class="card col-4">
+                <div class="card-header">
+                 <img src="https://img1.parentune.com/images/blogs/Reduce-Pain-After-Vaccination-In-Infants-1523510771.jpg" alt="" class="w-100">
+                </div>
+                <div class="card-body">
+                 <h3>first vaccinationr</h3>
+                 <p class="text-primary">Nowadays there are several debates going on regarding vaccination. There are people advocating for and against vaccination. However, vaccination is considered as a social responsibility by most of the people. All the same, approaching the baby vaccination date gives most of the mothers sleepless nights. This is because most of the immunizations / vaccinations are given as shots. No mother likes to watch their baby in pain after the shots. 
+        
+                    Do you know a fact that before their second birthday, babies get around 20 shots in the name of vaccinations? Some vaccines cause more uneasiness than others. Vaccination pain in infants can make the baby unmanageable. But here are few tips to soothe baby from the post-vaccination shot and give vaccination pain relief for babies.</p>
+            </div>
+            </div>
+            <div class="row">
+            <div class="card col-4">
+                <div class="card-header">
+                 <img src="https://cdn.cdnparenting.com/articles/2018/06/273641858_H-1024x700.jpg" alt="" class="w-100">
+                <div class="card-body">
+                 <h3>Antibiotics</h3>
+                 <p class="text-primary">Antibiotics are medicines that are made to destroy bacteria that cause diseases and infections. They work by interfering with the ability of the bacteria to feed, grow or reproduce, eventually killing them. Antibiotics are only effective against bacteria and cannot be used to cure illnesses caused by other organisms such as viruses and fungi.
+                    </p>
+                </div>
+                
+            </div>
+            </div>
+        </body>
+        <br>
+        <br>
+        <br>
+        <body>
+          <div class="background">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal123">book an appointment</button>
+          <div class="modal" id="modal123">
+             <div class="modal-dialog">
+              <div class="modal-content" style="background-color:blue;">
+                  <div class="modal-header">
+                      <h2 class="text-success">request for appointment</h2>
+                      <button data-bs-dismiss="modal" class="btn-close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                         firstname:<br>
+                         <input type="firstname" name="firstname" id="firstname" class="btn btn-danger"><br>
+                         lastname:<br>
+                         <input type="lastname" name="lastname" id="lastname" class="btn btn-danger"><br><br>
+                         enter doctor type:<br>
+                         <input type="doctor type" name="doctor type" id="doctor type" class="btn btn-danger"><br><br>
+                         date of book appointment:<br>
+                         <input type="book appointment" name="book appointment" id="book appointment"class="btn btn-danger"><br><br>
+      
+      
+                         
+                         <input type="submit" value="login" class="btn btn-warning"><br>
+                      </form>
+                      </div>
+                      <div class="modal-footer">
+                         thank you
+                      </div>
+                  </div>
+             </div> 
+          </div>
+          </div>
+      </body>
+      <form id="contact form">
+
+
+      </form>
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</html>
